@@ -1,0 +1,158 @@
+.landing-layer{
+    width: 100%;
+    position: relative;
+    background: linear-gradient(rgba($color-primary,0.8),rgba($color-primary,0.6)) ,url(../images/bg.jpeg) center no-repeat;
+    background-size: cover;
+    header{
+        height: 90vh;
+    }
+    .nav{
+        padding: 20px 0;
+        @include flexLayout;
+        ul{
+            @include flexLayout;
+            width: 90%;
+         li{
+            list-style: none;
+            margin: 0px 15px;
+            font-family: $font-iransans;
+
+            &.menu-left{
+                margin-right: auto;
+            }
+            a{
+                @include styleNav;
+                &:hover{
+                    color: $color-Paragraph;
+                }
+            }
+           }
+        }
+    }
+    .brand{
+        position: absolute;
+        color: $color-Secondary;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        @include flexLayout;
+       
+    }
+}
+.mt-85{
+    margin-top: 85px;
+
+    .section-title{
+        float: right;
+        width: 100%;
+        margin-bottom: 80px;
+
+        .title{
+            font-family: $font-yekan;
+            font-size: 58px;
+            color: $color-title;
+            @include flexLayout;
+        }
+    }
+
+    .title-p{
+        @include textTitle;
+        padding-bottom: 10px;
+    }
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .card{
+        border: 2px solid $color-title;
+        margin-bottom: 1%;
+
+        .card-body{
+            line-height: 30px;
+        }
+        .card-title{
+            float: right;
+        }
+        .card-text{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .menu-item-dot{
+            border-bottom: 1px dotted $color-primary;
+        }
+        .buy-food{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 0 20px;
+            background:$color-title;
+
+            .hot-desc{
+                font-size: 25px;
+                cursor: pointer;
+                padding: 3px;
+                margin-top: 5px;
+                color: $color-whait;
+            }
+        }
+    }
+}
+footer{
+    background-color: $color-dark;
+    .footer-info{
+        @include textTitle;
+        color: $color-whait;
+        margin-top: 15px;
+        .footer-ul{
+            list-style: none;
+            line-height: 30px;
+            a{
+                @include styleNav;
+                &:hover{
+                    color: $color-Paragraph;
+                }
+            }
+           
+        }
+        .title-p{
+            margin-top: 20px;
+        }
+    }
+    .footer-social{
+        @include textTitle;
+        color: $color-whait;
+        margin-top: 15px;
+        ul{
+            list-style: none;
+            line-height: 50px;  
+            @include flexLayout;
+            li{
+                list-style: none;
+                margin: 0px 15px;
+                a{
+                    @include styleNav;
+                }
+            }    
+        }
+    }
+    .footer-bottom{
+        min-height: 30px;
+        position: relative;
+        padding: 20px 0 ;
+        .footer-contacts{
+            @include flexLayout;
+            li{
+                list-style: none;
+                margin: 0px 15px;
+                font-family: $font-iransans;
+                color: $color-whait;
+                a{
+                    @include styleNav;
+                }
+            }
+        }
+    }
+    
+}

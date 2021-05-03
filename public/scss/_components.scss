@@ -1,0 +1,32 @@
+//tamam style bekhahim jahai dige estefade konim
+
+.logo{
+    @include flexLayout;
+    font-size: 70px;
+    color: $color-Secondary;
+    width: 100px;
+    height: 100px;
+    border: 3px solid $color-Secondary;
+    border-radius: 50%;
+}
+.main-name{
+    font-family: $font-yekan;
+    font-size: $font-size-lg;
+    @include textStyle;
+     margin-right: 10px;
+}
+.sub-name{
+    font-family: $font-yekan;
+    font-size: 18px;
+    text-align: center;
+    @include textStyle;
+}
+.separator{
+    width: 56px;
+    height: 24px;
+    margin: 10px auto 10px;
+
+    &.color-separator{
+        background: url(../images/color-separator.png) no-repeat center;
+    }
+}

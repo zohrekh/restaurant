@@ -1,0 +1,74 @@
+$color-primary:#171717;
+$color-Secondary:#fbc42b;
+$color-tertiary:#a4a7c6;
+$color-bg_title:#f14507;
+$color-Paragraph:#ff9f1a;
+$color-whait:#fff;
+$color-dark:#262626;
+$color-title:#C59D5F;
+
+
+$font-size-lg:2.80rem;
+$font-size-md:1.5rem;
+$font-size-sm:1rem;
+$font-nunito:"Nanito", sans-serif;
+$font-awesome: fontawesome;
+$font-yekan:Yekan;
+$font-iransans:IranSans;
+$font-sahel:Sahel,Tahoma;
+
+@font-face {
+    font-family: Sahel;
+    src: url("../fonts/Sahel.eot");
+    src: url("../fonts/Sahel.ttf") format("ttf");
+    src: url("../fonts/Sahel.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: fontawesome;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont.svg') format('svg'), url('../fonts/fontawesome-webfont.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/fontawesome-webfont.ttf') format('truetype');
+}
+@font-face{
+    font-family: Yekan;
+    src: url("../fonts/Yekan.eot?#") format("eot") , url("../fonts/Yekan.svg") format("svg") ,
+     url("../fonts/Yekan.ttf") format("ttf"), url("../fonts/Yekan.woff") format("woff");
+}
+@font-face{
+    font-family: IranSans;
+    src: url("../fonts/iransans.eot?#") format("eot"), url("../fonts/iransans.woff") format("woff"), url("../fonts/iransans.woff2") format("woff2");
+}
+@mixin flexLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin textStyle {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+@mixin textTitle {
+    font-family: $font-yekan;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+@mixin styleNav {
+    color: $color-whait;
+    text-decoration: none;
+    font-size: $font-size-sm;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    direction: rtl;
+}
